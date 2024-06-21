@@ -11,7 +11,7 @@ const about = {
   description:
     "Dynamic and analytical Data Analyst with a solid foundation in statistics and data analysis. Highly skilled in SQL, Python, and R, with practical experience in machine learning, data visualization, and big data technologies. Passionate about transforming complex data into actionable insights and optimizing performance through advanced analytics. Committed to continuous learning and professional growth, ready to make a significant impact on a forward-thinking team.",
   resume:
-    "https://drive.google.com/file/d/1gDHTfdf8iFFDWdkISt_D8QFzdrepdT43/view?usp=sharing",
+    "https://docs.google.com/document/d/12qQMB_uzXyh3ioazM5CxgVF9adUJSJPS08K2QThPnPQ/edit?usp=sharing",
   social: {
     linkedin: "https://www.linkedin.com/in/ganya-janardhan/",
     github: "https://github.com/ganya04",
