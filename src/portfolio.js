@@ -7,15 +7,15 @@ const header = {
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: "Ganya Janardhan",
-  role: "Software Engineer",
+  role: "Data Analyst",
   description:
-    "Highly motivated and detail-oriented Software Developer with nearly two years of experience at Accenture. Adept at translating complex technical concepts into user-friendly solutions and passionate about staying up-to-date with emerging industry trends. Excited to apply my practical experience and strong foundation to contribute effectively to a dynamic software development team and continue my growth in the field.",
+    "Dynamic and analytical Data Analyst with a solid foundation in statistics and data analysis. Highly skilled in SQL, Python, and R, with practical experience in machine learning, data visualization, and big data technologies. Passionate about transforming complex data into actionable insights and optimizing performance through advanced analytics. Committed to continuous learning and professional growth, ready to make a significant impact on a forward-thinking team.",
   resume:
     "https://drive.google.com/file/d/1gDHTfdf8iFFDWdkISt_D8QFzdrepdT43/view?usp=sharing",
   social: {
-    linkedin: "https://www.linkedin.com/in/abhirambj/",
-    github: "https://github.com/abhirambj",
-    twitter: "https://twitter.com/EL3CTR9N",
+    linkedin: "https://www.linkedin.com/in/ganya-janardhan/",
+    github: "https://github.com/ganya04",
+    twitter: "https://twitter.com/ganya_janardhan",
   },
 };
 
@@ -105,7 +105,7 @@ const skills = [
 ];
 
 const contact = {
-  email: "abhiram.bj@gmail.com",
+  email: "ganyajanardhan04@gmail.com",
 };
 
 export { header, about, experiences, projects, skills, contact };
