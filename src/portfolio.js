@@ -93,21 +93,48 @@ const projects = [
     name: "Facial Expression Recognition using Convolutional Neural Networks",
     description:
       "Directed the Facial Expression Recognition project, utilizing Custom CNN and Dense Net models on the FER2013 dataset. Demonstrated expertise in deep learning and image classification, achieving test accuracies of 62% and 64%.",
-    stack: ["Python", "TensorFlow", "Keras", "PyTorch", "Seaborn", "Matplotlib],
+    stack: [
+      "Python",
+      "TensorFlow",
+      "Keras",
+      "PyTorch",
+      "Seaborn",
+      "Matplotlib",
+    ],
     sourceCode: "https://github.com/Ganya04/Facial_expression_recognition",
   },
   {
     name: "Optimizing Movie Recommendation for Enhanced User Experience",
     description:
       "Engineered a movie recommendation system using collaborative filtering techniques, including matrix factorization, cosine similarity, and KNN algorithm. Enhanced user satisfaction and engagement through tailored movie suggestions.",
-    stack: ["Python", "Matrix Factorisation", "Cosine Similarity", "KNN", "Matplotlib", "Seaborn", "Pandas", "Numpy"],
+    stack: [
+      "Python",
+      "Matrix Factorisation",
+      "Cosine Similarity",
+      "KNN",
+      "Matplotlib",
+      "Seaborn",
+      "Pandas",
+      "Numpy",
+    ],
     sourceCode: "https://github.com/Ganya04/Optimizing_Movie_Recommendation",
   },
   {
     name: "Online Fake News Detection",
     description:
       "Applied R for data preprocessing and Python for algorithm implementation, utilizing logistic regression, multinomial naive bayes, and LSTM models. Achieved 81% detection accuracy, demonstrating strong capabilities in machine learning and data analysis.",
-    stack: ["R", "Python", "Logistic Regression", "Naive Bayes", "LSTM", "Matplotlib", "Seaborn", "Pandas", "Numpy", "ggplot2"],
+    stack: [
+      "R",
+      "Python",
+      "Logistic Regression",
+      "Naive Bayes",
+      "LSTM",
+      "Matplotlib",
+      "Seaborn",
+      "Pandas",
+      "Numpy",
+      "ggplot2",
+    ],
     sourceCode: "https://github.com/Ganya04/Online-fakenews-detection",
   },
   {
