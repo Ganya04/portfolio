@@ -128,6 +128,7 @@ export const projects = [
     title: "My Portfolio - V1",
     image: portfolio,
     linkGithub: "https://github.com/Ganya04/portfolio",
+    linkOnline: "https://ganya04.github.io/portfolio-ganya/",
     description:
       "A modern and visually engaging portfolio website showcasing my skills, projects, and professional journey, developed in 2024.",
     techStack: ["MERN Stack", "Tailwind CSS"],
