@@ -64,19 +64,6 @@ const ProjectCard = ({ project }) => {
 
         {/* Action Buttons */}
         <div className="flex justify-between items-center mt-4">
-          {project.linkOnline && (
-            <motion.a
-              href={project.linkOnline}
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.05 }}
-              className="text-sm text-gray-500 dark:text-gray-300 hover:text-purple-600 flex items-center gap-1 transition-colors"
-            >
-              <FaExternalLinkAlt />
-              Live Demo
-            </motion.a>
-          )}
-
           {project.linkGithub && (
             <motion.a
               href={project.linkGithub}
@@ -87,6 +74,18 @@ const ProjectCard = ({ project }) => {
             >
               <FaGithub />
               GitHub
+            </motion.a>
+          )}
+          {project.linkOnline && (
+            <motion.a
+              href={project.linkOnline}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              className="text-sm text-gray-500 dark:text-gray-300 hover:text-purple-600 flex items-center gap-1 transition-colors"
+            >
+              <FaExternalLinkAlt />
+              Live Demo
             </motion.a>
           )}
         </div>
