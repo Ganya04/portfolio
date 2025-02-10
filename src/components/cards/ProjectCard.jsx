@@ -63,14 +63,14 @@ const ProjectCard = ({ project }) => {
         </p>
 
         {/* Action Buttons */}
-        <div className="flex items-center gap-3 mt-4">
+        <div className="flex justify-between items-center mt-4">
           {project.linkOnline && (
             <motion.a
               href={project.linkOnline}
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
-              className="text-sm text-gray-500 dark:text-gray-300 hover:text-purple-600 flex items-center gap-1 transition-colors flex-end"
+              className="text-sm text-gray-500 dark:text-gray-300 hover:text-purple-600 flex items-center gap-1 transition-colors"
             >
               <FaExternalLinkAlt />
               Live Demo
