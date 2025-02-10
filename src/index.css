@@ -1,0 +1,145 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: var(--light-primary);
+  color: var(--light-text);
+}
+
+html.dark {
+  background-color: var(--dark-primary);
+  color: var(--dark-text);
+}
+
+img {
+  width: 100%;
+}
+
+/* Remove default underline from all links */
+a {
+  text-decoration: none;
+}
+
+/* Ensure no underline on hover for links */
+a:hover {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Remove focus ring and borders */
+a:focus {
+  outline: none;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+/* Components Layer */
+@layer components {
+  /* Navbar */
+  .nav-bar {
+    @apply flex justify-between items-center p-4 bg-light-secondary transition-colors duration-300;
+  }
+
+  .nav-bar.dark {
+    @apply bg-dark-secondary;
+  }
+
+  .nav-item {
+    @apply text-light-text hover:text-light-accent transition duration-200 ease-in-out;
+  }
+
+  .nav-item.dark {
+    @apply text-dark-text hover:text-dark-accent;
+  }
+
+  /* Theme Toggle */
+  .theme-toggle {
+    @apply cursor-pointer p-2 rounded-full bg-light-accent text-light-text transition duration-300;
+  }
+
+  .theme-toggle.dark {
+    @apply bg-dark-accent text-dark-text;
+  }
+}
+
+.experience-container {
+  @apply bg-light-secondary dark:bg-dark-secondary p-8 rounded-xl shadow-md;
+}
+
+.experience-title {
+  @apply text-3xl font-bold mb-6 text-light-text dark:text-dark-text;
+}
+
+.experience-card {
+  @apply bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg mb-6 transition hover:shadow-xl;
+}
+
+.experience-card-title {
+  @apply text-lg font-semibold text-light-accent dark:text-dark-accent;
+}
+
+.experience-card-content {
+  @apply text-base text-gray-600 dark:text-gray-300;
+}
+
+/* Utilities Layer */
+@layer utilities {
+  /* Custom Utilities */
+  .transition-li {
+    @apply transition-all duration-200 ease-in-out;
+  }
+
+  .transform-li {
+    @apply scale-110;
+  }
+
+  /* Text Colors */
+  .text-light-text {
+    --tw-text-opacity: 1;
+    color: rgba(51, 51, 51, var(--tw-text-opacity));
+  }
+
+  .hover\:text-light-accent:hover {
+    --tw-text-opacity: 1;
+    color: rgba(144, 160, 217, var(--tw-text-opacity));
+  }
+
+  .text-dark-text {
+    --tw-text-opacity: 1;
+    color: rgba(226, 232, 240, var(--tw-text-opacity));
+  }
+
+  .hover\:text-dark-accent:hover {
+    --tw-text-opacity: 1;
+    color: rgba(56, 189, 248, var(--tw-text-opacity));
+  }
+}
+
+/* Additional Custom Styles */
+.theme-toggle {
+  background-color: var(--light-accent);
+  color: var(--light-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle.dark {
+  background-color: var(--dark-accent);
+  color: var(--dark-text);
+}
