@@ -70,7 +70,7 @@ const ProjectCard = ({ project }) => {
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
-              className="text-sm text-gray-500 dark:text-gray-300 hover:text-purple-600 flex items-center gap-1 transition-colors"
+              className="text-sm text-gray-500 dark:text-gray-300 hover:text-purple-600 flex items-center gap-1 transition-colors flex-end"
             >
               <FaExternalLinkAlt />
               Live Demo
