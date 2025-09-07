@@ -16,9 +16,7 @@ export default function Experience() {
       roles: [
         { title: "Full-stack Developer", duration: "Apr 2024 - Present" },
       ],
-      description: `
-        At Hub Group, I build enterprise-scale billing and financial applications using Vue.js, Node.js, and MongoDB. My work spans designing secure REST APIs, modular UIs, and automating deployments with Azure DevOps, Jenkins, and OpenShift, while ensuring reliability through monitoring with Kibana and Compass.
-      `,
+      description: `At Hub Group, I build enterprise-scale billing and financial applications using Vue.js, Node.js, and MongoDB. My work spans designing secure REST APIs, modular UIs, and automating deployments with Azure DevOps, Jenkins, and OpenShift, while ensuring reliability through monitoring with Kibana and Compass.`,
       image: Hubgroup,
     },
     {
@@ -111,12 +109,9 @@ export default function Experience() {
                 </div>
               ))}
             </div>
-            <ul className="list-disc pl-6 mt-6 mb-4 text-gray-800 dark:text-gray-300">
-              <li>{experiences[activeIndex].description}</li>
-            </ul>
-            <ul className="list-disc pl-6 text-gray-800 dark:text-gray-300">
-              <li>{experiences[activeIndex].additionalInfo}</li>
-            </ul>
+            <p className="mt-6 mb-4 text-gray-800 dark:text-gray-300">
+              {experiences[activeIndex].description}
+            </p>
           </div>
         </div>
       </div>

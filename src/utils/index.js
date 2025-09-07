@@ -60,69 +60,6 @@ export const fixedNavItems = [
   { name: "Contact" },
 ];
 
-export const experiences = [
-  {
-    title: "Software Developer",
-    company: "Neuroleap Corporation",
-    duration: "Nov 2024 - Present",
-    description: [
-      "Developed scalable web applications using React and Node.js.",
-      "Improved system performance by 30% through optimized database queries.",
-      "Led a team of 5 to implement Agile methodologies, ensuring timely delivery.",
-    ],
-  },
-  {
-    title: "Software Developer",
-    company: "Saayam For All",
-    duration: "Oct 2024 - Nov 2024",
-    description: [
-      "Created responsive UI components with React and TailwindCSS.",
-      "Collaborated with the backend team to integrate APIs seamlessly.",
-      "Boosted user engagement by 25% through improved UX design.",
-    ],
-  },
-  {
-    title: "Software Developer",
-    company: "Veriteam Software Solutions Pvt.Ltd",
-    duration: "Jun 2022 - Jul 2022",
-    description: [
-      "Created responsive UI components with React and TailwindCSS.",
-      "Collaborated with the backend team to integrate APIs seamlessly.",
-      "Boosted user engagement by 25% through improved UX design.",
-    ],
-  },
-  {
-    title: "Software Developer",
-    company: "Smmud Technologies Pvt.Ltd",
-    duration: "Jan 2022 - Jun 2022",
-    description: [
-      "Created responsive UI components with React and TailwindCSS.",
-      "Collaborated with the backend team to integrate APIs seamlessly.",
-      "Boosted user engagement by 25% through improved UX design.",
-    ],
-  },
-  {
-    title: "Data Analyst",
-    company: "Smmud Technologies Pvt.Ltd",
-    duration: "Jan 2021 - Dec 2021",
-    description: [
-      "Created responsive UI components with React and TailwindCSS.",
-      "Collaborated with the backend team to integrate APIs seamlessly.",
-      "Boosted user engagement by 25% through improved UX design.",
-    ],
-  },
-  {
-    title: "Data Scientist",
-    company: "The Sparks Foundation",
-    duration: "Dec 2020 - Jun 2021",
-    description: [
-      "Created responsive UI components with React and TailwindCSS.",
-      "Collaborated with the backend team to integrate APIs seamlessly.",
-      "Boosted user engagement by 25% through improved UX design.",
-    ],
-  },
-];
-
 export const projects = [
   {
     title: "My Portfolio - V1",

@@ -79,27 +79,24 @@ const About = () => {
         >
           <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
             Hey there! I&apos;m <strong>Ganya Janardhan</strong>, a software
-            developer and data enthusiast based in Chicago. I specialize in
-            Frontend development with expertise in <strong>React.js</strong> and{" "}
-            <strong>Python</strong>, while also adapting seamlessly to backend
-            and data-focused project needs.
+            developer specializing in enterprise solutions based in Chicago. With expertise in 
+            <strong> Vue.js</strong>, <strong>React.js</strong>, and <strong>Node.js</strong>, 
+            I build scalable applications that drive business value through innovative technology solutions.
           </p>
           <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
             Currently, I work for{" "}
             <a
-              href="https://www.neuroleap.com/"
+              href="https://www.hubgroup.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-purple-600 dark:text-purple-400 hover:underline font-medium"
             >
-              Neuroleap Corporation
+              Hub Group Inc
             </a>{" "}
-            as a Software Developer,where I build scalable, high-performance
-            applications and optimize systems to deliver impactful solutions. My
-            passion for data complements my development skills—whether it&apos;s
-            designing efficient state management systems or analyzing datasets
-            to drive insights, I thrive on bridging software and data-driven
-            innovation.
+            as a Full-stack Developer in the logistics technology domain. I develop enterprise-scale 
+            billing and financial systems, focusing on secure API architectures and efficient UI implementations. 
+            My work involves modernizing critical business processes through cloud infrastructure, 
+            automated deployment pipelines, and robust monitoring solutions.
           </p>
           <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
             Outside of work, I enjoy exploring nature trails 🌲, experimenting
@@ -107,9 +104,9 @@ const About = () => {
             trends in AI, data analytics, and tech 🤖.
           </p>
           <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-            I&apos;m seeking new opportunities that let me combine my love for
-            coding and data with solving complex challenges. Let&apos;s connect
-            if you think we align!
+            I&apos;m always interested in connecting with fellow developers and exploring
+            opportunities to solve challenging problems in the tech space. Feel free to reach out
+            if you&apos;d like to discuss technology, innovation, or potential collaborations!
           </p>
         </motion.div>
 
