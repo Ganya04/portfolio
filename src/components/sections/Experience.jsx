@@ -2,10 +2,8 @@
 
 import { useState } from "react";
 import SectionHeader from "../ui/SectionHeader";
-import sparks from "../../assets/images/sparks.jpeg";
 import smmud from "../../assets/images/smmud.jpeg";
-import veriteam from "../../assets/images/veriteam.jpeg";
-import saayam from "../../assets/images/saayam.jpeg";
+import Hubgroup from "../../assets/images/Hubgroup.png";
 import neuroleap from "../../assets/images/neuroleap.png";
 import techlance from "../../assets/images/techlance.jpg";
 
@@ -14,84 +12,36 @@ export default function Experience() {
 
   const experiences = [
     {
-      company: "Neuroleap Corporation",
-      roles: [{ title: "Software Developer", duration: "Nov 2024 - Present" }],
+      company: "Hub Group Inc",
+      roles: [
+        { title: "Full-stack Developer", duration: "Apr 2024 - Present" },
+      ],
       description: `
-        Developing software solutions for cutting-edge neurological research and advancements.
-        Focused on creating modular React.js components with Node.js APIs for scalable and accessible applications.
+        At Hub Group, I build enterprise-scale billing and financial applications using Vue.js, Node.js, and MongoDB. My work spans designing secure REST APIs, modular UIs, and automating deployments with Azure DevOps, Jenkins, and OpenShift, while ensuring reliability through monitoring with Kibana and Compass.
       `,
-      additionalInfo: `
-        Improved system performance by 30%, optimized state management, and implemented Docker-based deployments.
-        Collaborated on integrating RESTful APIs for seamless functionality and efficient data flow.
+      image: Hubgroup,
+    },
+    {
+      company: "Neuroleap Corporation",
+      roles: [{ title: "Software Developer", duration: "Oct 2024 - Apr 2025" }],
+      description: `
+        Contributed to a healthcare platform for cognitive assessments by developing scalable components with React.js and Node.js. I containerized workflows with Docker, implemented secure authentication using AWS Cognito, and established reliable delivery pipelines with Azure.
       `,
       image: neuroleap,
     },
     {
-      company: "Saayam For All",
-      roles: [{ title: "Software Developer", duration: "Oct 2024 - Nov 2024" }],
-      description: `
-        Worked on impactful community engagement software, ensuring accessibility and usability across devices.
-        Designed dynamic user interfaces using React.js and Tailwind CSS, elevating mobile responsiveness.
-      `,
-      additionalInfo: `
-        Established cloud infrastructure using AWS services, automated CI/CD deployments, and monitored performance
-        using AWS CloudWatch, revamping scalability and operational productivity.
-      `,
-      image: saayam,
-    },
-    {
-      company: "Veriteam Software Solutions Pvt.Ltd",
-      roles: [{ title: "Software Developer", duration: "Jun 2022 - Jul 2022" }],
-      description: `
-        Contributed to enterprise-level projects with a focus on backend integrations and API development.
-        Facilitated a flexible news feed system leveraging microservices, enhancing user engagement by 35%.
-      `,
-      additionalInfo: `
-        Improved real-time data updates using RESTful APIs, reduced latency by 15%, and launched versatile back-end
-        solutions with AWS and CI/CD automation.
-      `,
-      image: veriteam,
-    },
-    {
       company: "Smmud Technologies Pvt.Ltd",
-      roles: [
-        { title: "Data Analyst", duration: "Jan 2021 - Dec 2021" },
-        { title: "Software Developer", duration: "Jan 2022 - Jun 2022" },
-      ],
+      roles: [{ title: "Software Developer", duration: "Jul 2020 - Jul 2022" }],
       description: `
-        Transitioned from data analysis to full-stack development, focusing on scalable e-commerce solutions.
-        Partnered with backend teams to broaden system capacity, ensuring high availability and scalability.
-      `,
-      additionalInfo: `
-        Amplified page load times by 30% through code splitting and lazy loading, and streamlined MySQL databases
-        for improved query response by 25%.
+        Worked on scalable, event-driven systems for media applications with Vue.js, Node.js, and MongoDB. I improved backend performance through optimized queries and streamlined deployments with Azure DevOps, ensuring high availability.
       `,
       image: smmud,
-    },
-    {
-      company: "The Sparks Foundation",
-      roles: [{ title: "Data Scientist", duration: "Dec 2020 - Jun 2021" }],
-      description: `
-        Conducted advanced data-driven research and implemented machine learning models for impactful solutions.
-        Delivered actionable insights through predictive analytics and data visualization pipelines.
-      `,
-      additionalInfo: `
-        Achieved 97% accuracy in K-means clustering on a 16-dimensional dataset and refined SQL queries,
-        expanding database capability by 30% and reducing query execution time by 20%.
-      `,
-      image: sparks,
     },
     {
       company: "Techlance Software Solutions",
       roles: [{ title: "Software Developer", duration: "Jan 2019 - Jun 2020" }],
       description: `
-        Designed and developed full-stack applications for clients across diverse industries as a freelancer.
-        Focused on building scalable solutions, integrating APIs, and ensuring optimal performance for end users.
-      `,
-      additionalInfo: `
-        Successfully implemented RESTful APIs that enhanced application efficiency by 25%.
-        Improved database query execution times by 20% through advanced SQL query optimization
-        and developed dynamic front-end interfaces that boosted client satisfaction by 30%.
+        Developed healthcare tracking and enterprise platforms with React.js and Node.js, focusing on modernized architectures. I migrated legacy systems into modern stacks and improved usability through analytics-driven insights and responsive design.
       `,
       image: techlance,
     },

@@ -7,28 +7,28 @@ import Marquee from "react-fast-marquee";
 
 const skillStacks = [
   {
-    title: "Data Science & AI",
+    title: "💻 Full-Stack Development",
     description:
-      "Crafting scalable machine learning models for predictive analytics and intelligent automation. Proficient in implementing deep learning techniques for Computer Vision and NLP applications.",
-    tools: ["TensorFlow", "PyTorch", "Python", "Scikit-learn"],
+      "Building responsive, user-centric applications with Vue.js, React.js, and Node.js. Crafting secure REST APIs, scalable frontends, and seamless database integration to support high-performance enterprise systems.",
+    tools: ["React.js", "Node.js", "Vue.js", "MongoDB"],
   },
   {
-    title: "Data Analytics & Visualization",
+    title: "⚙️ Backend & Systems Engineering",
     description:
-      "Transforming raw data into actionable insights through advanced analytics. Crafting intuitive, visually compelling dashboards and reports to enable data-driven decision-making.",
+      "Designing robust backends and event-driven systems to handle millions of daily transactions. Implementing authentication, database schemas, and modular services for secure and scalable architectures.",
+    tools: ["Express.js", "JWT", "REST APIs", "MySQL"],
+  },
+  {
+    title: "🚀 Cloud & DevOps",
+    description:
+      "Automating deployments with Azure DevOps, Jenkins, and OpenShift, ensuring zero-downtime releases. Containerizing workflows with Docker and monitoring production workloads to maintain reliability and scalability.",
+    tools: ["Azure", "Docker", "Jenkins", "Openshift"],
+  },
+  {
+    title: "📊 Data & Analytics",
+    description:
+      "Turning raw data into actionable insights with analytics and machine learning. Experienced in building predictive models, creating dashboards, and integrating ML pipelines to guide smarter decision-making.",
     tools: ["Python", "SQL", "Power BI", "Tableau"],
-  },
-  {
-    title: "Full Stack Development",
-    description:
-      "Designing dynamic, user-centric front-end interfaces with React.js and developing cross-platform mobile applications using React Native. Crafting robust, scalable backends with Node.js and Express.js to ensure seamless application performance.",
-    tools: ["React", "Node.js", "CSS"],
-  },
-  {
-    title: "Cloud Infra-Architecture",
-    description:
-      "Hosting and maintaining secure, high-performance websites on cloud platforms. Deploying deep learning models on the cloud, enabling seamless mobile and web accessibility for real-time usage.",
-    tools: ["AWS", "Docker", "Azure"],
   },
 ];
 
@@ -53,6 +53,8 @@ const staggerContainer = {
 };
 
 const About = () => {
+  const [speed, setSpeed] = React.useState(0);
+  
   return (
     <section
       className="relative mx-auto max-w-7xl px-6 py-16 transition-colors duration-300"
@@ -134,7 +136,6 @@ const About = () => {
         />
 
         {(() => {
-          const [speed, setSpeed] = React.useState(0);
 
           return (
             <div className="relative">

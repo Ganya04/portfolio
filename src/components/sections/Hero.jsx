@@ -1,8 +1,6 @@
-import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { CustomButton } from "../buttons/CustomButton";
 import NavBar from "../navbar/NavBar";
-import profile from "../../assets/images/GanyaRP.jpg";
 import { motion } from "framer-motion";
 import { headlines } from "../../utils";
 import { SocialMediaIcons } from "../ui/SocialMediaIcons";
@@ -23,9 +21,9 @@ const Hero = () => {
   const [text] = useTypewriter({
     words: [
       "Software Developer",
-      "Web Developer",
-      "Data Enthusiast",
-      "Data/Business Analyst",
+      "Full-stack Developer",
+      "MERN Stack Developer",
+      "Web Applications Engineer",
     ],
     loop: 0, // Infinite loop
     typeSpeed: 40,
@@ -49,7 +47,7 @@ const Hero = () => {
               <div>
                 {/* Static Title */}
                 <h1 className="text-4xl font-extrabold mx-auto md:text-5xl text-primary-text">
-                  Hi, I'm Ganya Janardhan.
+                  Hi, I&apos;m Ganya Janardhan.
                 </h1>
 
                 {/* Typewriter Animation */}
