@@ -13,7 +13,7 @@ export default function Experience() {
 			company: "Hub Group",
 			roles: [
 				{
-					title: "Data Analytics Engineer",
+					title: "Data Analytics Engineer - Software & Data Systems",
 					duration: "April 2025 - Present",
 				},
 			],
@@ -24,7 +24,7 @@ export default function Experience() {
 		{
 			company: "DaVita",
 			roles: [
-				{ title: "Data Engineer", duration: "Jan 2024 - March 2025" },
+				{ title: "Data Engineer - Analytics & ML Pipelines", duration: "Jan 2024 - March 2025" },
 			],
 			description: `I built and managed data and machine learning pipelines that powered healthcare analytics at scale. Using Python, PySpark, dbt, and GCP Dataflow, I unified data from EHR, CRM, and claims systems into clean, analytics-ready layers on BigQuery and Snowflake. I also helped deploy predictive models through Vertex AI and Jenkins, enabling smarter forecasts and more reliable clinical insights.`,
 			useTextLogo: true,
@@ -34,7 +34,7 @@ export default function Experience() {
 		{
 			company: "Smmud Technologies",
 			roles: [
-				{ title: "Data Analyst", duration: "Sept 2020 - July 2022" },
+				{ title: "Data Analyst - Data Infrastructure", duration: "Jan 2021 - July 2022" },
 			],
  			description: `I helped modernize the company’s analytics platform by automating ETL workflows and building scalable pipelines on AWS. Using Glue, Redshift, and SageMaker, I streamlined data ingestion and built predictive models for demand forecasting and resource planning. I also created interactive dashboards in Power BI and Tableau, turning complex operational data into clear business insights.`,			
   			image: smmud,
