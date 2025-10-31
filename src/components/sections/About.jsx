@@ -75,7 +75,7 @@ const About = () => {
 				>
 					<p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
 						Hey there! I&apos;m <strong>Ganya Janardhan</strong>, a
-						Data Analytics Engineer with 4 years of experience
+						Data Analytics Engineer with over 3+ years of experience
 						designing scalable ETL pipelines, financial/healthcare
 						data models, and cloud-based analytics solutions. Based
 						in Chicago, I specialize in
