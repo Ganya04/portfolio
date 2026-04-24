@@ -4,11 +4,11 @@ import React, { createContext, useState, useEffect } from "react";
 export const ThemeContext = createContext();
 
 const ThemeProvider = ({ children }) => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
-  // Initialize theme from localStorage or default to light
+  // Initialize theme from localStorage or default to dark
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") || "light";
+    const savedTheme = localStorage.getItem("theme") || "dark";
     setIsDarkMode(savedTheme === "dark");
     document.documentElement.classList.toggle("dark", savedTheme === "dark");
   }, []);
