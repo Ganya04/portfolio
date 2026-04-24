@@ -66,7 +66,7 @@ export const fixedNavItems = [
 	{ name: "About" },
 	{ name: "Experience" },
 	{ name: "Projects" },
-	{ name: "Passion" },
+	{ name: "Certifications" },
 	{ name: "Contact" },
 ];
 

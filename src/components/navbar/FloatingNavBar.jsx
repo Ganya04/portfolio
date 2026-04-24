@@ -138,7 +138,7 @@ const floatingNavItems = [
     icon: <IconPrompt className="h-5 w-5" />,
   },
   {
-    name: "Passion",
+    name: "Certifications",
     icon: <IconArticle className="h-5 w-5" />,
   },
   // {

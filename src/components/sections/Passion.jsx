@@ -79,7 +79,10 @@ const Passion = () => {
   };
 
   return (
-    <section className="mx-auto mt-5 max-w-6xl px-4 md:px-8" id="passion">
+    <section
+      className="mx-auto mt-5 max-w-6xl px-4 md:px-8"
+      id="certifications"
+    >
       <SectionHeader
         title={"Certifications."}
         subtitle={"Recognitions of my expertise."}
