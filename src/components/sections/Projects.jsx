@@ -1,158 +1,150 @@
-import React from "react";
-import Slider from "react-slick"; // Import the Slider from react-slick
+import React, { useState } from "react";
 import ProjectCard from "../cards/ProjectCard";
 import SectionHeader from "../ui/SectionHeader";
 import { projects } from "../../utils";
-import { FaGithub } from "react-icons/fa";
-import { motion } from "framer-motion";
-import "slick-carousel/slick/slick.css"; // Import slick-carousel styles
-import "slick-carousel/slick/slick-theme.css";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Projects = () => {
-  // Slider settings for react-slick
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: "50px", // Adjust padding for large screens
-    nextArrow: <CustomNextArrow />,
-    prevArrow: <CustomPrevArrow />,
-    responsive: [
-      {
-        breakpoint: 1440,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          centerPadding: "50px",
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          centerPadding: "40px",
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerPadding: "20%",
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerPadding: "10%",
-        },
-      },
-    ],
-  };
+  const allProjectsPreviewCount = 3;
+  const tabs = [
+    {
+      id: "All",
+      label: "All Projects",
+      description: "A quick scan of the full body of work.",
+    },
+    {
+      id: "Analytics & BI",
+      label: "Analytics & BI",
+      description: "Dashboards, reporting, operations, and decision support.",
+    },
+    {
+      id: "ML & AI",
+      label: "ML & AI",
+      description: "Predictive models, deep learning, and applied research.",
+    },
+    {
+      id: "Web & Product",
+      label: "Web & Product",
+      description: "Interactive front-end and product-minded builds.",
+    },
+  ];
+
+  const [activeTab, setActiveTab] = useState("All");
+  const [showAllProjects, setShowAllProjects] = useState(false);
+
+  const filteredProjects =
+    activeTab === "All"
+      ? projects
+      : projects.filter((project) => project.category === activeTab);
+  const visibleProjects =
+    activeTab === "All" && !showAllProjects
+      ? filteredProjects.slice(0, allProjectsPreviewCount)
+      : filteredProjects;
+  const hiddenProjectCount =
+    activeTab === "All"
+      ? Math.max(filteredProjects.length - allProjectsPreviewCount, 0)
+      : 0;
+
+  const activeTabMeta = tabs.find((tab) => tab.id === activeTab) || tabs[0];
 
   return (
     <section
-      className="mt-5 max-w-7xl mx-auto px-4 md:px-6 relative"
+      className="relative mx-auto mt-5 max-w-7xl px-4 md:px-6"
       id="projects"
     >
-      {/* Section Header */}
       <SectionHeader title={"Projects."} subtitle={"Most recent works"} />
 
-      {/* Carousel Slider */}
-      <div className="mt-6 relative">
-        <Slider {...settings}>
-          {projects.map((project, idx) => (
-            <div key={idx} className="px-3">
-              <ProjectCard project={project} />
-            </div>
-          ))}
-        </Slider>
-      </div>
+      <div className="mt-10">
+        <div className="flex flex-wrap justify-center gap-3 md:justify-start">
+          {tabs.map((tab) => {
+            const isActive = activeTab === tab.id;
+            const count =
+              tab.id === "All"
+                ? projects.length
+                : projects.filter((project) => project.category === tab.id)
+                    .length;
 
-      {/* GitHub Link Section */}
-      <div className="flex flex-col items-center mt-8">
-        <p className="text-md text-gray-700 dark:text-gray-300 font-medium">
-          For more projects...
-        </p>
-        <a
-          href="https://github.com/Ganya04"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 mt-2 group"
-        >
-          <span className="text-lg font-semibold text-gray-800 dark:text-white group-hover:text-purple-500 transition-colors duration-300">
-            Head to my GitHub
-          </span>
+            return (
+              <button
+                key={tab.id}
+                type="button"
+                onClick={() => {
+                  setActiveTab(tab.id);
+                  if (tab.id !== "All") {
+                    setShowAllProjects(false);
+                  }
+                }}
+                className={`rounded-full px-4 py-2 text-sm font-semibold transition-all duration-300 ${
+                  isActive
+                    ? "bg-gradient-to-r from-purple-500 to-indigo-600 text-white shadow-lg"
+                    : "bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700"
+                }`}
+              >
+                {tab.label}
+                <span
+                  className={`ml-2 rounded-full px-2 py-0.5 text-xs ${
+                    isActive
+                      ? "bg-white/20 text-white"
+                      : "bg-white text-gray-500 dark:bg-gray-700 dark:text-gray-300"
+                  }`}
+                >
+                  {count}
+                </span>
+              </button>
+            );
+          })}
+        </div>
+
+        <div className="mt-8 flex items-center justify-between gap-4">
+          <div>
+            <h3 className="mt-2 text-2xl font-semibold text-gray-900 dark:text-white">
+              {activeTabMeta.label}
+            </h3>
+            <p className="mt-2 max-w-2xl text-sm leading-7 text-gray-600 dark:text-gray-400">
+              {activeTabMeta.description}
+            </p>
+            {activeTab === "All" &&
+              hiddenProjectCount > 0 &&
+              !showAllProjects && (
+                <p className="mt-2 text-sm font-medium text-purple-700 dark:text-purple-300">
+                  Showing {visibleProjects.length} of {filteredProjects.length}{" "}
+                  projects.
+                </p>
+              )}
+          </div>
+          <div className="hidden h-px flex-1 bg-gradient-to-r from-purple-400/60 via-fuchsia-400/30 to-transparent md:block" />
+        </div>
+
+        <AnimatePresence mode="wait">
           <motion.div
-            initial={{ x: -8 }}
-            animate={{ x: 8 }}
-            transition={{
-              repeat: Infinity,
-              repeatType: "reverse",
-              duration: 1,
-            }}
-            className="flex items-center justify-center w-8 h-8 bg-gray-100 dark:bg-gray-700 rounded-full shadow-md group-hover:bg-purple-500 transition-all duration-300"
+            key={activeTab}
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -16 }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
+            className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3"
           >
-            <FaGithub className="text-xl text-gray-700 dark:text-white group-hover:text-white" />
+            {visibleProjects.map((project) => (
+              <ProjectCard key={project.title} project={project} />
+            ))}
           </motion.div>
-        </a>
+        </AnimatePresence>
+
+        {activeTab === "All" && hiddenProjectCount > 0 && (
+          <div className="mt-8 flex justify-center">
+            <button
+              type="button"
+              onClick={() => setShowAllProjects((current) => !current)}
+              className="rounded-full border border-purple-200 bg-white px-5 py-3 text-sm font-semibold text-gray-700 shadow-[0_0_0_1px_rgba(168,85,247,0.08)] transition-all duration-300 hover:border-purple-400 hover:text-purple-700 hover:shadow-[0_10px_30px_-12px_rgba(168,85,247,0.45)] dark:border-purple-400/30 dark:bg-gray-900 dark:text-gray-200 dark:hover:border-purple-300 dark:hover:text-purple-200"
+            >
+              {showAllProjects
+                ? "Show fewer projects"
+                : `Show ${hiddenProjectCount} more projects`}
+            </button>
+          </div>
+        )}
       </div>
     </section>
-  );
-};
-
-// Custom Arrow Components
-const CustomNextArrow = ({ onClick }) => {
-  return (
-    <div
-      className="absolute right-[-60px] top-1/2 transform -translate-y-1/2 z-50 cursor-pointer flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:bg-gradient-to-r hover:from-purple-600 hover:via-indigo-600 hover:to-blue-600 text-white shadow-lg transition-all duration-300"
-      onClick={onClick}
-      aria-label="Next slide"
-      role="button"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="w-5 h-5"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        strokeWidth="2"
-      >
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-      </svg>
-    </div>
-  );
-};
-
-const CustomPrevArrow = ({ onClick }) => {
-  return (
-    <div
-      className="absolute left-[-60px] top-1/2 transform -translate-y-1/2 z-50 cursor-pointer flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:bg-gradient-to-r hover:from-purple-600 hover:via-indigo-600 hover:to-blue-600 text-white shadow-lg transition-all duration-300"
-      onClick={onClick}
-      aria-label="Previous slide"
-      role="button"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="w-5 h-5"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        strokeWidth="2"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M15 19l-7-7 7-7"
-        />
-      </svg>
-    </div>
   );
 };
 

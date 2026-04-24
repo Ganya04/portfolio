@@ -73,6 +73,7 @@ export const fixedNavItems = [
 export const projects = [
 	{
 		title: "Data-Driven Operations Platform (Palantir Foundry)",
+		category: "Analytics & BI",
 		image: car,
 		linkGithub: "https://github.com/Ganya04/palantir-operational-data-platform",
 		linkOnline: null,
@@ -82,6 +83,7 @@ export const projects = [
 	},
 	{
 		title: "Business Intelligence Dashboards – Power BI Work Samples",
+		category: "Analytics & BI",
 		image: PM,
 		linkGithub:
 			"https://github.com/Ganya04/Power-BI-dashboards",
@@ -92,6 +94,7 @@ export const projects = [
 	},
 	{
 		title: "My Portfolio - V1",
+		category: "Web & Product",
 		image: portfolio,
 		linkGithub: "https://github.com/Ganya04/portfolio-ganya/",
 		linkOnline: "https://ganya04.github.io/portfolio-ganya/",
@@ -101,6 +104,7 @@ export const projects = [
 	},
 	{
 		title: "Facial Expression Recognition using Convolutional Neural Networks",
+		category: "ML & AI",
 		image: facial,
 		linkGithub: "https://github.com/Ganya04/Facial_expression_recognition",
 		linkOnline: null,
@@ -117,6 +121,7 @@ export const projects = [
 	},
 	{
 		title: "Optimizing Movie Recommendation for Enhanced User Experience",
+		category: "ML & AI",
 		image: movie,
 		linkGithub:
 			"https://github.com/Ganya04/Optimizing_Movie_Recommendation",
@@ -134,6 +139,7 @@ export const projects = [
 	},
 	{
 		title: "Online Fake News Detections",
+		category: "ML & AI",
 		image: fake,
 		linkGithub: "https://github.com/Ganya04/Online-fakenews-detection",
 		linkOnline: null,
@@ -151,6 +157,7 @@ export const projects = [
 	},
 	{
 		title: "Demographic Analysis in a Population",
+		category: "Analytics & BI",
 		image: demo,
 		linkGithub: "https://github.com/Ganya04/Demographic-analysis",
 		linkOnline: null,
@@ -160,6 +167,7 @@ export const projects = [
 	},
 	{
 		title: "Histopathologic Cancer Detection Using Lymph Node Tissues",
+		category: "ML & AI",
 		image: histo,
 		linkGithub:
 			"https://github.com/Ganya04/Histopthalogic_cancer_detection",

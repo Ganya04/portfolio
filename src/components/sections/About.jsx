@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import SectionHeader from "../ui/SectionHeader";
 import profilePic from "../../assets/images/GanyaRP.jpg";
-import { skillsWork, certificates } from "../../utils/index";
+import { skillsWork } from "../../utils/index";
 import Marquee from "react-fast-marquee";
 
 const skillStacks = [
@@ -152,7 +152,7 @@ const About = () => {
 									return (
 										<div
 											key={index}
-											className="w-36 h-36 flex flex-col items-center justify-center mx-4 bg-gradient-to-br from-gray-100 to-gray-300 text-gray-800 dark:from-gray-800 dark:to-gray-900 dark:text-white rounded-xl shadow-lg hover:scale-100 hover:border-2 hover:border-purple-500 transition-transform duration-300 overflow-hidden"
+											className="mx-4 flex h-36 w-36 flex-col items-center justify-center overflow-hidden rounded-2xl border border-white/40 bg-gradient-to-br from-gray-100 via-white to-gray-200 text-gray-800 shadow-md transition-transform duration-300 hover:border-purple-300 hover:shadow-xl dark:border-white/10 dark:from-gray-800 dark:via-gray-900 dark:to-gray-950 dark:text-white"
 										>
 											<div className="text-4xl mb-2 text-purple-500 dark:text-purple-500">
 												<IconComponent />
@@ -171,31 +171,6 @@ const About = () => {
 
 			<div className="mt-16">
 				<SectionHeader
-					title={"Certifications."}
-					subtitle={"Recognitions of my expertise."}
-				/>
-				<motion.div
-					initial="hidden"
-					animate="visible"
-					variants={staggerContainer}
-					className="flex flex-wrap justify-center items-center gap-6 mt-8 mx-auto"
-				>
-					{certificates.map((cert, index) => (
-						<motion.div
-							key={index}
-							className="bg-gradient-to-r from-gray-100 to-gray-300 text-dark-secondary dark:from-gray-800 dark:to-gray-900 dark:text-white hover:dark:text-white p-4 rounded-lg hover:bg-gradient-to-r hover:dark:bg-gradient-to-r hover:text-white hover:dark:from-blue-500 hover:dark:to-purple-500 hover:from-blue-500 hover:to-purple-500 transition-all duration-300 shadow-md hover:shadow-lg w-72"
-							variants={fadeInVariants}
-						>
-							<h3 className="text-lg text-center font-bold">
-								{cert}
-							</h3>
-						</motion.div>
-					))}
-				</motion.div>
-			</div>
-
-			<div className="mt-16">
-				<SectionHeader
 					title={"What I Do."}
 					subtitle={"Explore my skills visually as building blocks."}
 				/>
@@ -208,7 +183,7 @@ const About = () => {
 					{skillStacks.map((stack, index) => (
 						<motion.div
 							key={index}
-							className="relative bg-gradient-to-br from-gray-100 to-gray-300 text-gray-800 dark:from-gray-800 dark:to-gray-900 dark:text-white p-6 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 hover:rotate-1 transition-transform duration-300 ease-out"
+							className="relative rounded-2xl border border-white/40 bg-gradient-to-br from-gray-100 via-white to-gray-200 p-6 text-gray-800 shadow-md transition-transform duration-300 ease-out hover:shadow-xl dark:border-white/10 dark:from-gray-800 dark:via-gray-900 dark:to-gray-950 dark:text-white"
 							variants={fadeInVariants}
 						>
 							<h3 className="text-xl font-bold">{stack.title}</h3>

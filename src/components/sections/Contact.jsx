@@ -197,7 +197,7 @@ const Contact = () => {
 					<button
 						type="submit"
 						onClick={handleSubmit}
-						className="w-full py-2 text-white bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 rounded-lg shadow-md hover:opacity-90 transition-transform transform hover:scale-105"
+						className="w-full rounded-lg bg-gradient-to-r from-purple-500 to-indigo-600 py-3 text-white shadow-lg transition-all duration-300 ease-in-out hover:from-purple-600 hover:to-indigo-700 active:from-purple-700 active:to-indigo-800"
 					>
 						Send Message
 					</button>

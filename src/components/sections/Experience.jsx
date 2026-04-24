@@ -56,13 +56,14 @@ export default function Experience() {
 
 			<div className="relative max-w-7xl mx-auto mt-4 px-4 md:px-6">
 				<div className="flex flex-col md:flex-row gap-6 items-start">
-					<div className="w-full md:w-1/4 bg-gray-100 dark:bg-gray-800 rounded-lg p-4">
+					<div className="w-full rounded-2xl border border-white/40 bg-gradient-to-br from-gray-100 via-white to-gray-200 p-4 shadow-md dark:border-white/10 dark:from-gray-800 dark:via-gray-900 dark:to-gray-950 md:w-1/4">
 						{experiences.map((exp, index) => (
 							<div
 								key={exp.company}
-								className={`p-4 rounded-lg shadow-lg transition-transform duration-300 ease-out cursor-pointer flex items-center gap-4 mb-4 ${activeIndex === index
-									? "border-l-4 border-blue-500 bg-gradient-to-r from-blue-500 to-purple-500 text-white"
-									: "hover:from-blue-500 hover:to-purple-500 hover:shadow-2xl hover:scale-105 hover:rotate-1"
+								className={`mb-4 flex cursor-pointer items-center gap-4 rounded-2xl p-4 transition-transform duration-300 ease-out ${
+									activeIndex === index
+										? "bg-gradient-to-r from-purple-500 to-indigo-600 text-white shadow-lg"
+										: "border border-white/40 bg-gradient-to-br from-gray-100 via-white to-gray-200 text-gray-800 shadow-sm hover:shadow-md dark:border-white/10 dark:from-gray-800 dark:via-gray-900 dark:to-gray-950 dark:text-white"
 									}`}
 								onClick={() => setActiveIndex(index)}
 							>
@@ -86,7 +87,7 @@ export default function Experience() {
 						))}
 					</div>
 
-					<div className="w-full md:w-3/4 bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+					<div className="w-full rounded-2xl border border-white/40 bg-gradient-to-br from-gray-100 via-white to-gray-200 p-6 shadow-md dark:border-white/10 dark:from-gray-800 dark:via-gray-900 dark:to-gray-950 md:w-3/4">
 						<h3 className="text-2xl font-semibold mb-6">
 							{experiences[activeIndex].company}
 						</h3>
