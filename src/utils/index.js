@@ -4,12 +4,16 @@ import fake from "../assets/images/fake.png";
 import portfolio from "../assets/images/portfolio v1.png";
 import facial from "../assets/images/facial.png";
 import histo from "../assets/images/histo.png";
-import a1 from "../assets/images/a1.png";
-import a2 from "../assets/images/a2.png";
-import a3 from "../assets/images/a3.png";
+import acc from "../assets/images/acc.png";
+import pwc from "../assets/images/pwc.png";
+import quantium from "../assets/images/quantium.png";
 import a4 from "../assets/images/a4.png";
 import a5 from "../assets/images/a5.png";
 import a6 from "../assets/images/a6.png";
+import car from "../assets/images/car.png";
+import PM from "../assets/images/PM.jpeg";
+import IBM from "../assets/images/IBM.jpeg";
+import Google from "../assets/images/Google.jpeg";
 import { FaCss3Alt } from "react-icons/fa6";
 import { GrMysql } from "react-icons/gr";
 import { BiLogoPostgresql } from "react-icons/bi";
@@ -53,8 +57,8 @@ import {
 
 export const headlines = [
 	"Hi, I'm Ganya.",
-	"I'm a Data Analytics Engineer",
-	"Data Analytics Engineer with 4 years of experience designing scalable ETL pipelines, financial/healthcare data models, and cloud-based analytics solutions across Azure, AWS, and GCP. Proven track record of improving data governance, forecasting accuracy, and compliance through automated validation, anomaly detection, and ML-driven insights.",
+	"I'm a Business Systems Analyst",
+	"Business Systems Analyst with 5 years of experience across transportation, healthcare, and enterprise technology environments. Strong expertise in requirement gathering, BRDs, FRDs, workflow analysis, UAT coordination, and regulatory compliance. Improved care coordination efficiency, reduced invoice disputes, and strengthened reporting accuracy. Skilled in translating complex operational and financial data into actionable insights that support operational strategy and executive decision making..",
 ];
 
 export const fixedNavItems = [
@@ -67,6 +71,25 @@ export const fixedNavItems = [
 ];
 
 export const projects = [
+	{
+		title: "Data-Driven Operations Platform (Palantir Foundry)",
+		image: car,
+		linkGithub: "https://github.com/Ganya04/palantir-operational-data-platform",
+		linkOnline: null,
+		description:
+			"Developed a Palantir Foundry solution integrating multiple datasets using pipelines and ontology modeling.Delivered interactive dashboards and workflows to track operations and support real-time decision-making.",
+		techStack: ["Palantir Foundry", "Pipeline Builder", "Ontology Manager", "Workshop"],
+	},
+	{
+		title: "Business Intelligence Dashboards – Power BI Work Samples",
+		image: PM,
+		linkGithub:
+			"https://github.com/Ganya04/Power-BI-dashboards",
+		linkOnline: null,
+		description:
+			"Built interactive Power BI dashboards across project management, sales, and HR analytics to uncover trends and performance insights. Applied DAX, data modeling, and advanced visualizations to support data-driven decision-making.",
+		techStack: ["Python", "TensorFlow", "Keras", "CNN", "Data Cleaning"],
+	},
 	{
 		title: "My Portfolio - V1",
 		image: portfolio,
@@ -199,40 +222,28 @@ export const certificates = [
 export const articles = [
 	{
 		title: "Data Analytics Job Simulation - Accenture North America",
-		summary:
-			"Analyzed retail data to uncover a 23% higher purchase likelihood of Tyrrells chips among young singles/couples, driving strategic recommendations to enhance product visibility and impulse sales.",
 		url: "https://github.com/Ganya04/Accenture-Data-Analytics-and-Visualization-Virtual-Internship",
-		image: a1,
+		image: acc,
 	},
 	{
 		title: "Power BI Job Simulation - Pwc Switzerland",
-		resume: "Automated shipping data pipelines with Python-based ETL scripts, enhancing data processing efficiency and enabling faster analytics and reporting.",
 		url: "https://github.com/Ganya04/PwC-Switzerland-Power-BI-Job-Simulation-on-Forage-",
-		image: a2,
+		image: pwc,
 	},
 	{
 		title: "Data Analytics Job Simulation - Quantium",
-		resume: "Automated shipping data pipelines with Python-based ETL scripts, enhancing data processing efficiency and enabling faster analytics and reporting.",
 		url: "https://github.com/Ganya04/Quantium-Data-Analytics-Job-Simulation",
-		image: a3,
+		image: quantium,
 	},
 	{
-		title: "HR Analytics Dashboard - Power BI",
-		resume: "Automated shipping data pipelines with Python-based ETL scripts, enhancing data processing efficiency and enabling faster analytics and reporting.",
-		url: "https://github.com/Ganya04/Power-BI-dashboards",
-		image: a4,
+		title: "Architecting with Google Compute Engine Specialization",
+		url: "https://github.com/Ganya04/Architecting-Google-Compute-Engine",
+		image: Google,
 	},
 	{
-		title: "Project Manager Dashboard - Power BI",
-		resume: "Automated shipping data pipelines with Python-based ETL scripts, enhancing data processing efficiency and enabling faster analytics and reporting.",
-		url: "https://github.com/Ganya04/Power-BI-dashboards",
-		image: a5,
-	},
-	{
-		title: "Sales Dashboard - Power BI",
-		resume: "Automated shipping data pipelines with Python-based ETL scripts, enhancing data processing efficiency and enabling faster analytics and reporting.",
-		url: "https://github.com/Ganya04/Power-BI-dashboards",
-		image: a6,
+		title: "IBM Data Science Professional Certificate",
+		url: "https://github.com/Ganya04/IBM-Data-Science",
+		image: IBM,
 	},
 ];
 

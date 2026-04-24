@@ -13,20 +13,20 @@ const Hero = () => {
 
 	const handleResumeClick = () => {
 		window.open(
-			"https://drive.google.com/file/d/1Zbi80ZUdKLZ6tus4iJkd3CzGZAySJAY1/view?usp=drive_link"
+			"https://drive.google.com/file/d/1z0UKwbzKuzlg9QOVlPYxnWckQKoMTgg2/view?usp=drive_link"
 		);
 	};
 
 	// Typewriter animation for title
 	const [text] = useTypewriter({
 		words: [
-			"Data Analytics Engineer",
-			"Data Analyst",
-			"Data Engineer",
-			"Data Scientist",
-			"Software Engineer",
-			"Machine Learning Engineer",
+			"Business Systems Analyst",
+			"Business Analyst",
 			"Business Intelligence Analyst",
+			"Data Analyst",
+			"Analytics Engineer",
+			"Data Engineer",
+			"ETL Developer",
 		],
 		loop: 0,
 		typeSpeed: 40,

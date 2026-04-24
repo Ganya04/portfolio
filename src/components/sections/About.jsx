@@ -7,6 +7,12 @@ import Marquee from "react-fast-marquee";
 
 const skillStacks = [
 	{
+		title: "📊 Analytics & Business Intelligence",
+		description:
+			"Creating interactive dashboards and reports with Power BI, Tableau, and Looker. Developing DAX measures, advanced Excel automation, and self-service analytics solutions that drive data-driven decision-making across organizations.",
+		tools: ["Power BI", "Tableau", "Looker", "Excel"],
+	},
+	{
 		title: "💾 Data Engineering & ETL",
 		description:
 			"Designing scalable ETL pipelines with Azure Data Factory, Matillion, dbt, and Airflow. Building robust data integrations across Snowflake, Databricks, and cloud platforms to deliver analytics-ready datasets for enterprise reporting and compliance.",
@@ -17,12 +23,6 @@ const skillStacks = [
 		description:
 			"Architecting cloud-based analytics solutions across Azure, AWS, and GCP. Implementing data lakes, warehouses, and streaming pipelines with services like BigQuery, Redshift, Dataflow, and Kafka for scalable data processing.",
 		tools: ["Azure", "AWS", "GCP", "Kafka"],
-	},
-	{
-		title: "📊 Analytics & Business Intelligence",
-		description:
-			"Creating interactive dashboards and reports with Power BI, Tableau, and Looker. Developing DAX measures, advanced Excel automation, and self-service analytics solutions that drive data-driven decision-making across organizations.",
-		tools: ["Power BI", "Tableau", "Looker", "Excel"],
 	},
 	{
 		title: "🤖 Machine Learning & Predictive Analytics",
@@ -73,55 +73,34 @@ const About = () => {
 					variants={fadeInVariants}
 					className="space-y-8 text-center md:text-left max-w-lg"
 				>
-					<p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-						Hey there! I&apos;m <strong>Ganya Janardhan</strong>, a
-						Data Analytics Engineer with over 3+ years of experience
-						designing scalable ETL pipelines, financial/healthcare
-						data models, and cloud-based analytics solutions. Based
-						in Chicago, I specialize in
-						<strong> SQL</strong>, <strong>Python</strong>,{" "}
-						<strong>PySpark</strong>, and{" "}
-						<strong>dbt (data build tool) </strong>
-						across Azure, AWS, and GCP platforms.
-					</p>
-					<p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-						Currently, I work for{" "}
-						<a
-							href="https://www.hubgroup.com/"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="text-purple-600 dark:text-purple-400 hover:underline font-medium"
-						>
-							Hub Group
-						</a>{" "}
-						as a Data Analytics Engineer, where I design scalable
-						ETL pipelines using Azure Data Factory, Snowflake,
-						Matillion, and Kafka. I develop financial data models in
-						Databricks and dbt, build automated validation
-						frameworks, and deliver interactive reporting solutions
-						in Power BI and Looker that drive business insights and
-						improve data governance.
-					</p>
-					<p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-						I hold a{" "}
-						<strong>
-							Master of Computer Science in Data Analytics
-						</strong>{" "}
-						from Illinois Institute of Technology, and I&apos;m
-						certified in Google Data Analytics, AWS Solutions
-						Architecture, and IBM Data Science. My expertise spans
-						the full data lifecycle from ingestion and
-						transformation to analytics and ML-driven insights.
-					</p>
-					<p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-						Outside of work, I enjoy exploring nature trails 🌲,
-						experimenting with new recipes 🍲, and staying ahead of
-						the curve with the latest trends in AI, data analytics,
-						and tech 🤖. I&apos;m always interested in connecting
-						with fellow data professionals and exploring
-						opportunities to solve challenging problems in the
-						analytics space!
-					</p>
+				<p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+  					I&apos;m <strong>Ganya Janardhan</strong>, a Business Systems Analyst with 5+ years of experience working across data, reporting, and business processes. I focus on translating business needs into structured data solutions using <strong>SQL</strong>, <strong>Python</strong>, and BI tools.
+				</p>
+
+				<p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+				At{" "}
+				<a
+					href="https://www.hubgroup.com/"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="text-purple-600 dark:text-purple-400 hover:underline font-medium"
+				>
+					Hub Group
+				</a>{" "}
+				I&apos;ve worked on financial and operational reporting, supported data pipelines, validated data quality, and built dashboards that help teams track performance and make decisions. Over time, I&apos;ve also worked more closely with data transformations, pipeline logic, and how data is structured for analytics.
+				</p>
+
+				<p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+				I hold a <strong>Master&apos;s in Computer Science (Data Analytics)</strong> from Illinois Institute of Technology, along with certifications in IBM Data Science and Google Cloud. My work spans across analytics, reporting, and building reliable data workflows.
+				</p>
+
+				<p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+				Currently, I&apos;m focused on strengthening my skills in data engineering and applied AI—working on projects around data pipelines, automation, and scalable analytics systems.
+				</p>
+
+				<p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+				Outside of work, I enjoy exploring nature trails 🌲, trying out new recipes 🍲, and keeping up with what&apos;s happening in data and AI 🤖.
+				</p>
 				</motion.div>
 
 				<motion.div

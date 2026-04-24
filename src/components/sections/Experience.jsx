@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import SectionHeader from "../ui/SectionHeader";
-import smmud from "../../assets/images/smmud.jpeg";
+import trigent from "../../assets/images/trigent.jpeg";
+import uhg from "../../assets/images/uhg.png";
 import Hubgroup from "../../assets/images/Hubgroup.png";
 
 export default function Experience() {
@@ -13,31 +14,33 @@ export default function Experience() {
 			company: "Hub Group",
 			roles: [
 				{
-					title: "Data Analytics Engineer - Software & Data Systems",
+					title: "Business Systems Analyst",
 					duration: "April 2025 - Present",
 				},
 			],
-			description: `I build data pipelines and analytics systems that power financial forecasting and reporting across the company. Using Azure Data Factory, Snowflake, and Databricks, I automate data ingestion and transformation, improving reliability and reducing latency. My work blends data engineering, analytics, and MLOps to turn raw data into trusted insights for business and finance teams.`,
+			description: `Working across finance and operations, I focus on improving billing, cost visibility, and performance reporting for intermodal transportation programs. My work involves translating business needs into structured requirements and building dashboards that track freight spend, carrier performance, and operational KPIs. I’ve worked closely with shipment billing workflows, including fuel surcharge calculations, rate structures, lane/destination-based pricing, and different billing formats across customers and carriers. I analyze how charges are applied across routes and identify inconsistencies or gaps impacting revenue and cost accuracy. I also support data validation and UAT, ensuring outputs align with source systems and business rules, helping reduce discrepancies and improve reporting reliability.`,
 			image: Hubgroup,
 			useTextLogo: false,
 		},
 		{
-			company: "DaVita",
+			company: "UnitedHealth Group",
 			roles: [
-				{ title: "Data Engineer - Analytics & ML Pipelines", duration: "Jan 2024 - March 2025" },
+				{ 
+					title: "Business Systems Analyst", 
+					duration: "Jan 2024 - March 2025" 
+			    },
 			],
-			description: `I built and managed data and machine learning pipelines that powered healthcare analytics at scale. Using Python, PySpark, dbt, and GCP Dataflow, I unified data from EHR, CRM, and claims systems into clean, analytics-ready layers on BigQuery and Snowflake. I also helped deploy predictive models through Vertex AI and Jenkins, enabling smarter forecasts and more reliable clinical insights.`,
-			useTextLogo: true,
-			logoText: "DV",
-			logoColor: "bg-gradient-to-br from-orange-500 to-red-600",
+			description: `At UHG, I worked on healthcare data and system transformation initiatives, focusing on patient data, insurance claims processing, and care management workflows. My role involved bridging business, clinical, and technical teams to define requirements and support system enhancements across payer systems. I worked with end-to-end claims lifecycle data (intake, adjudication, and reimbursement), along with member eligibility, provider data, and benefit plan structures, helping improve data consistency and reduce discrepancies across systems. I also supported initiatives around payer-provider data exchange, claims validation, and cost-of-care analysis, ensuring alignment with operational and regulatory requirements. In addition, I analyzed clinical and claims datasets to identify trends in utilization, readmissions, and treatment costs, while supporting UAT and ensuring compliance with HIPAA, CMS guidelines, and healthcare data standards.`,
+			image: uhg,
+			useTextLogo: false,			
 		},
 		{
-			company: "Smmud Technologies",
+			company: "Trigent Software Inc,",
 			roles: [
-				{ title: "Data Analyst - Data Infrastructure", duration: "Jan 2021 - July 2022" },
+				{ title: "Business Systems Analyst ", duration: "Jan 2020 - June 2022" },
 			],
- 			description: `I helped modernize the company’s analytics platform by automating ETL workflows and building scalable pipelines on AWS. Using Glue, Redshift, and SageMaker, I streamlined data ingestion and built predictive models for demand forecasting and resource planning. I also created interactive dashboards in Power BI and Tableau, turning complex operational data into clear business insights.`,			
-  			image: smmud,
+ 			description: `At Trigent, I worked on a range of enterprise and e-commerce projects for different clients, supporting business analysis, system enhancements, and reporting initiatives. My role involved gathering and translating business requirements into functional specifications, user stories, and process flows aligned with client needs. I worked with transactional data, order management workflows, and customer-related data, supporting systems handling order processing, inventory tracking, and payment flows. I performed gap analysis and collaborated with technical teams to ensure solutions were aligned with business requirements and scalable across use cases. In addition, I supported reporting and analytics efforts using SQL and Excel, helping validate data, track KPIs, and improve visibility into business performance. I also contributed to UAT cycles, test case creation, and defect tracking to ensure smooth releases across client environments.`,			
+  			image: trigent,
 			useTextLogo: false,
 		},
 	];
